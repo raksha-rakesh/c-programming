@@ -1,0 +1,8 @@
+#include<stdio.h>
+void main()
+{
+int a = 5;
+printf("%d",a-- + a++);
+printf("\n%d",--a);//pre dcremnt
+printf("\n%d",++a);//pre increment
+}
