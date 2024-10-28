@@ -1,0 +1,10 @@
+#include<stdio.h>
+int main()
+{
+
+    char str[]="SRIRAKSHA";
+    char str2[50];
+    strcpy(str2,str);
+    printf("copied elemnts are:%s",str2);
+    return 0;
+}
