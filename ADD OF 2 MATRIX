@@ -1,0 +1,40 @@
+#include<stdio.h>
+int main()
+{
+int rows,cols;
+int i,j;
+printf("enter the nunber of rows and cols of the matrics:");
+scanf("%d%d",&rows,&cols);
+int matrix1[rows][cols],matrix2[rows][cols],result[rows][cols];
+printf("enter ements of first matrix");
+for(i=0;i<rows;i++){
+    for(j=0;j<cols;j++){
+    printf("lemrntd[%d][%d]:",i,j);
+scanf("%d",&matrix1[i][j]);
+}
+}
+
+for(i=0;i<rows;i++){
+    for(j=0;j<cols;j++){
+    printf("lemrntd[%d][%d]:",i,j);
+scanf("%d",&matrix2[i][j]);
+}
+}
+
+for(i=0;i<rows;i++){
+        for(j=0;j<cols;j++){
+        result[i][j]=matrix1[i][j]+matrix2[i][j];
+}
+}
+printf("resultant matrix \n");
+
+for(i=0;i<rows;i++){
+        for(j=0;j<cols;j++){
+                printf("%d",result[i][j]);
+        }
+        printf("\n");
+}
+return 0;
+}
+
+
