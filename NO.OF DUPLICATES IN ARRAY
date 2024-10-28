@@ -1,0 +1,17 @@
+#include<stdio.h>
+void main()
+{
+
+    int arr[]={10,50,30,10,50};
+    int count=0;
+    int length = sizeof(arr)/sizeof(arr[0]);
+    printf("total elements:%d",length);
+    for(int i=0;i<length;i++)
+    {
+
+    for(int j=i+1;j<length;j++)
+       if( arr[i]==arr[j])
+        count++;
+}
+
+printf("the duplicates is:%d ",count );}
