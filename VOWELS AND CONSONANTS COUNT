@@ -1,0 +1,24 @@
+#include <stdio.h>
+int main()
+{
+    char str[]="abcdeio";
+    int i,vowelcount=0,consocount=0;
+    int count;
+    for(i=0;str[i]!='\0';i++)
+    {
+        if
+            (str[i]=='a' || str[i]=='e' || str[i]=='i' || str[i]=='o' || str[i]=='u')
+    {
+        vowelcount++;
+    }
+
+        else
+            consocount++;
+    }
+
+printf("Total vowels : %d",count);
+printf("Total consonents : %d",consocount);
+{
+    return 0;
+}
+}
