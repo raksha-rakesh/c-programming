@@ -1,0 +1,32 @@
+
+
+#include <stdio.h>
+
+void inputMatrix(int r, int c, int M[r][c]) {
+    for (int i = 0; i < r; i++) {
+        for (int j = 0; j < c; j++) {
+            scanf("%d", &M[i][j]);
+        }
+    }
+}
+
+int main() {
+    int r, c;
+    printf("Enter rows and columns: ");
+    scanf("%d %d", &r, &c);
+
+    int A[r][c], B[r][c];
+
+    printf("Enter elements of matrix A:\n");
+    inputMatrix(r, c, A);
+
+    printf("Matrix A:\n");
+    for (int i = 0; i < r; i++) {
+        for (int j = 0; j < c; j++) {
+            printf("%d ", A[i][j]);
+        }
+        printf("\n");
+    }
+
+
+}
