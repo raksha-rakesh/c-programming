@@ -1,0 +1,15 @@
+#include<stdio.h>
+#include<limits.h>
+void main()
+{
+    int min=INT_MAX,i;
+    int arr[]={10,20,30,40,50};
+    int length = sizeof(arr)/sizeof(arr[0]);
+    printf("total elements:%d",length);
+    for(int i=0;i<length;i++){
+
+        if( arr[i]< min) min=arr[i];
+
+}
+printf(" minimum value:%d\n", min);
+}
